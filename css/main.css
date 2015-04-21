@@ -1,12 +1,18 @@
-* {
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+/** {
     border: 1px solid red !important;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', serif;
 }
 
 .grid {
@@ -22,11 +28,15 @@
 }
 
 .right {
-    text-align: right;
+    float: right;
 }
 
 .left {
-    text-align: left;
+    float: left;
+}
+
+.txt-right{
+    text-align: right;
 }
 
 .col-1 {
@@ -75,4 +85,65 @@
 
 .col-12 {
     width: 100%;
+}
+
+header {
+    margin-top: 30px;
+    color: #585858;
+}
+
+header img {
+    max-width: 120px;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 42pt;
+    font-weight: 100;
+    margin: 0;
+}
+
+hr {
+    border: 2px solid #949494;
+}
+
+svg {
+    margin: 10px;
+    display: block;
+}
+
+#h2 {
+    color: #949494;
+    font-size: 32pt;
+    font-family: 'Noto Sans', serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+#pictures img {
+    width:calc((100% - 40px)/3);
+    margin-right: 15px;
+}
+
+#pictures img:last-of-type {
+    margin-right: 0;
+}
+
+#text {
+    text-align: center;
+    color: #585858;
+}
+
+#text h2 {
+    font-size: 30pt;
+    margin: 10px auto;
+}
+
+p {
+    font-size: 12pt;
+    font-weight: 100;
 }
